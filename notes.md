@@ -27,6 +27,8 @@ func changeColorString(red: Int, green: Int, blue: Int, brightness: Int = 0) -> 
     return NSString(format: "4341 %02X %02X %02X %02X %02X", red, green,blue, 0, brightness)
 }
 ```
+Formatted Example: `4341FF00D700000000000000000000000000`
+
 ###Change Temperature and Brightness
 Temperature can range from `1700` to `6500`
 ```swift
@@ -34,3 +36,4 @@ func changeTempBrightnessString(temperature: Int, brightness: Int = 0) -> NSStri
     return NSString(format: "4343 %04X %02lX", temperature,brightness)
 }
 ```
+Formatted Example: `434313886400000000000000000000000000"`
