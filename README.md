@@ -1,5 +1,3 @@
-# node-mi-lamp
-Node.js library for the Xiaomi Yeelight Bedside Lamp (Still in RE phase)
-
+# Yeelight Bedside Lamp Node Library
 
 **[Reverse Engineering Notes](notes.md)**
