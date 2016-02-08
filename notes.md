@@ -24,7 +24,7 @@ func formatCommandString(string: NSString, length: Int = 36) -> NSString {
 ```swift
 func changeColorString(red: Int, green: Int, blue: Int, brightness: Int = 0) -> NSString {
     //not sure what the 4th param does yet, also setting brightness to 0 will have no effect
-    return NSString(format: "4341 %02X %02X %02X %02X %02X", red, green,blue, 0, brightness)
+    return NSString(format: "4341 %02X %02X %02X %02X %02X", red, green, blue, 0, brightness)
 }
 ```
 Formatted Example: `4341FF00D700000000000000000000000000`
@@ -33,7 +33,7 @@ Formatted Example: `4341FF00D700000000000000000000000000`
 Temperature can range from `1700` to `6500`
 ```swift
 func changeTempBrightnessString(temperature: Int, brightness: Int = 0) -> NSString {
-    return NSString(format: "4343 %04X %02lX", temperature,brightness)
+    return NSString(format: "4343 %04X %02lX", temperature, brightness)
 }
 ```
 Formatted Example: `434313886400000000000000000000000000`
