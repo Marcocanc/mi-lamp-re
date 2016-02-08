@@ -36,4 +36,4 @@ func changeTempBrightnessString(temperature: Int, brightness: Int = 0) -> NSStri
     return NSString(format: "4343 %04X %02lX", temperature,brightness)
 }
 ```
-Formatted Example: `434313886400000000000000000000000000"`
+Formatted Example: `434313886400000000000000000000000000`
