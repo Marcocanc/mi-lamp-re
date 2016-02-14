@@ -1,8 +1,6 @@
 #Yeelight Bedside Lamp RE Notes
 *NOTE: Code snippets are in Swift since I'm reversing the iOS App*
 
-##Changing Light Attributes
-
 ###Endpoints
 
 **Service UUID:** `8E2F0CBD-1A66-4B53-ACE6-B494E25F87BD`
