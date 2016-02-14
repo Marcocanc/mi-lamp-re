@@ -19,6 +19,19 @@ func formatCommandString(string: NSString, length: Int = 36) -> NSString {
     return nString.stringByPaddingToLength(length, withString: "0", startingAtIndex: 0)
 }
 ```
+###Notify
+Register for Notify on `8F65073D-9F57-4AAA-AFEA-397D19D5BBEB`
+
+####Notify types:
+When receiving a notification, the first 2 bytes define what is being sent
+
+- `4363...` Device Status 1 is Unauthorized, 2 is Authorized
+
+###Pairing with the Device
+To Pair with the device,send the following command `436700000000000000000000000000000000` to the lamp
+The Lamp will notify with `43 63 01`
+After that the device should go into pairing mode (dim on and off). Press the Scene Button on your Lamp to pair.
+The Lamp will notify with `43 63 02` to confirm pairing
 
 ###Change Color with RGB & Brightness
 ```swift
