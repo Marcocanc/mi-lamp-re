@@ -23,9 +23,12 @@ func formatCommandString(string: NSString, length: Int = 36) -> NSString {
 Register for Notify on `8F65073D-9F57-4AAA-AFEA-397D19D5BBEB`
 
 ####Notify types:
-When receiving a notification, the first 2 bytes define what is being sent
+When receiving a notification, the first bytes define what is being received
 
-- `4363...` Device Status 1 is Unauthorized, 2 is Authorized
+- `4363..` Device Status
+    -  `01` Unauthorized/Not paired
+    -  `02` Authorized/Paired
+    -  `07` Lamp disconnect imminent
 
 ###Pairing with the Device
 To Pair with the device,send the following command `436700000000000000000000000000000000` to the lamp
