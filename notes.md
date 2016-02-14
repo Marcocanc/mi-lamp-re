@@ -32,8 +32,11 @@ When receiving a notification, the first bytes define what is being received
 
 ###Pairing with the Device
 To Pair with the device,send the following command `436700000000000000000000000000000000` to the lamp
+
 The Lamp will notify with `43 63 01`
+
 After that the device should go into pairing mode (dim on and off). Press the Scene Button on your Lamp to pair.
+
 The Lamp will notify with `43 63 02` to confirm pairing
 
 ###Change Color with RGB & Brightness
