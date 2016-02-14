@@ -53,3 +53,13 @@ func changeTempBrightnessString(temperature: Int, brightness: Int = 0) -> NSStri
 }
 ```
 Formatted Example: `434313886400000000000000000000000000`
+
+
+###
+- Disconnect: `4368`
+- Read color flow: `434c %02lx`
+- Delete color flow: `4373 %02lx`
+- Read lamp name: `4352`
+- Get statistics Data: `438c`
+- Set delay to off: `437f01%02x`
+*Will add more soon...*
