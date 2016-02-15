@@ -26,7 +26,7 @@ When receiving a notification, the first bytes define what is being received
 - `4363..` Device Status
     -  `01` Unauthorized/Not paired
     -  `02` Authorized/Paired
-    -  `04` Authorized device (mac address)
+    -  `04` Authorized device (UDID)
     -  `07` Lamp disconnect imminent
 
 ###Pairing with the Device
