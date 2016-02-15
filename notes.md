@@ -26,16 +26,19 @@ When receiving a notification, the first bytes define what is being received
 - `4363..` Device Status
     -  `01` Unauthorized/Not paired
     -  `02` Authorized/Paired
+    -  `04` Authorized device (mac address)
     -  `07` Lamp disconnect imminent
 
 ###Pairing with the Device
-To Pair with the device,send the following command `436700000000000000000000000000000000` to the lamp
+To Pair with the device,send the `4367` command with a client uuid. Example: `43677207d94ecb9e4ec5be6eafa46ed1c07c`
 
-The Lamp will notify with `43 63 01`
+The Lamp will notify with `43 63 01` to signal that it is in pairing mode.
 
-After that the device should go into pairing mode (dim on and off). Press the Scene Button on your Lamp to pair.
+Press the Scene Button on your Lamp to pair.
 
-The Lamp will notify with `43 63 02` to confirm pairing
+The Lamp will notify with `43 63 02` to confirm successful pairing
+
+If the Lamp was previously paired with the device, it will notify `43 63 04`
 
 ###Change Color with RGB & Brightness
 ```swift
