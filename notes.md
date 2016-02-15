@@ -59,7 +59,7 @@ func changeTempBrightnessString(temperature: Int, brightness: Int = 0) -> NSStri
 Formatted Example: `434313886400000000000000000000000000`
 
 
-###
+###More Commands
 - Disconnect: `4368`
 - Read color flow: `434c %02lx`
 - Delete color flow: `4373 %02lx`
