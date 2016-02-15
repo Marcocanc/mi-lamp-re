@@ -40,6 +40,9 @@ The Lamp will notify with `43 63 02` to confirm successful pairing
 
 If the Lamp was previously paired with the device, it will notify `43 63 04`
 
+###Turn On/Off
+The On/Off state can be switched with the `4340..` command. `434001` will turn it on, `434002` will turn it off
+
 ###Change Color with RGB & Brightness
 ```swift
 func changeColorString(red: Int, green: Int, blue: Int, brightness: Int = 0) -> NSString {
