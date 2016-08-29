@@ -13,8 +13,8 @@
 So far it seems like the hex command length is always 18 Bytes. We need to pad out the string with 0.
 ```swift
 func formatCommandString(string: NSString, length: Int = 36) -> NSString {
-    let nString = string.stringByReplacingOccurrencesOfString(" ", withString: "")
-    return nString.stringByPaddingToLength(length, withString: "0", startingAtIndex: 0)
+    return string.stringByReplacingOccurrencesOfString(" ", withString: "")
+            .stringByPaddingToLength(length, withString: "0", startingAtIndex: 0)
 }
 ```
 ###Notify
