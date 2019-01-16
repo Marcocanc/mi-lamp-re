@@ -1,4 +1,7 @@
 # Yeelight Bedside Lamp RE Notes
+
+*This repo is outdated and no longer maintained. Most of the things I've learned about the protocol have flown into [homebridge-yeelight](https://github.com/vvpossible/homebridge_yeelight)*
+
 *NOTE: Code snippets are in Swift since I'm reversing the iOS App*
 
 ### Endpoints
